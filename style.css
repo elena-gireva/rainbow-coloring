@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    background-image: url(image/pole.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100vw;
+}
+.container, .coloring {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+    font-size: 45px;
+    background: linear-gradient(#f00, #ffa500,#f00);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: 'Tapestry', cursive; 
+    margin: 0 1%;
+}
+h2 {
+    font-size: 40px;
+    font-family: 'Tapestry', cursive;
+   text-align: center;
+     margin: 3% 7%;
+}
+.btn {
+    display: flex;
+    justify-content:space-around;
+    width: 50vw;
+}
+
+#btnOne, #btnTwo, #btnThree {
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 3%;
+    flex: 1;
+}
+.rainbow {
+    width: 50vw;
+    height: 25vw;
+    overflow: hidden;	
+    text-align: center;	
+} 
+.border{
+    border-style: solid;
+    border-width: 10px;
+    border-left-color: transparent;	
+    border-bottom-color: transparent;
+    border-radius: 50%;
+}
+
+.red {
+    width: calc(100% - 20px);	
+    height: calc(200% - 20px);
+    border-top-color: #f00;	
+    border-right-color: #f00;
+    transform: rotate(-45deg);	
+    -webkit-transform: rotate(-45deg);
+}
+.size{
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+}
+.nocolor {
+    border-top-color: #fff;
+    border-right-color: #fff;
+}
+
+#orange{
+    border-top-color: #ffa500;
+    border-right-color: #ffa500;
+}
+#yellow{
+    border-top-color: #ffff00;
+    border-right-color: #ffff00;
+}
+#green{
+    border-top-color: #0f0;
+    border-right-color: #0f0;
+}
+#blue{
+    border-top-color: #0000ff;
+    border-right-color: #0000ff;
+}
+#indigo{
+    border-top-color: #4b0082;
+    border-right-color: #4b0082;
+}
+#violet{
+    border-top-color: #ee82ee;
+    border-right-color: #ee82ee;
+}
+
+@media all and (max-width: 800px){
+    h1 {
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+}
+@media all and (max-width: 500px){
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+}
+    
